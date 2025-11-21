@@ -1,32 +1,31 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class keyScript : MonoBehaviour
+public class KeyScript : MonoBehaviour
 {
-    public GameObject inticon;
-    public GameObject key;
+    [Header("UI")]
+    public GameObject intIcon;
+
+    [Header("Assign the door this key unlocks")]
+    public Door doorToUnlock;
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
-        {
-            inticon.SetActive(true);
+        if (!other.CompareTag("MainCamera")) return;
 
-            // New Input System check
-            if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
-            {
-                key.SetActive(false);
-                Door.keyfound = true;
-                inticon.SetActive(false);
-            }
+        intIcon.SetActive(true);
+
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            doorToUnlock.UnlockDoor();   // Unlock the assigned door
+            gameObject.SetActive(false); // Hide/delete key
+            intIcon.SetActive(false);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("MainCamera"))
-        {
-            inticon.SetActive(false);
-        }
+            intIcon.SetActive(false);
     }
 }

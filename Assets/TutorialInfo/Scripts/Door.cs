@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;   // New Input System
+using UnityEngine.InputSystem;
 
 public class Door : MonoBehaviour
 {
-    public GameObject door_closed, door_opened, intText, lockedtext;
-    public AudioSource open, close;
-    public bool opened, locked;
-    public static bool keyfound;
+    [Header("Door Objects")]
+    public GameObject door_closed;
+    public GameObject door_opened;
 
-    void Start()
-    {
-        keyfound = false;   
-    }
+    [Header("UI Prompts")]
+    public GameObject intText;
+    public GameObject lockedtext;
+
+    [Header("Audio")]
+    public AudioSource openSound;
+    public AudioSource closeSound;
+
+    [Header("Settings")]
+    public bool locked = true;     // Door starts locked
+    private bool opened = false;
 
     void OnTriggerStay(Collider other)
     {
@@ -21,36 +27,19 @@ public class Door : MonoBehaviour
 
         if (!opened)
         {
-            if (!locked)
-            {
-                intText.SetActive(true);
-
-                // New Input System Check
-                bool pressedE = false;
-
-                if (Keyboard.current != null && Keyboard.current.eKey != null)
-                    pressedE = Keyboard.current.eKey.wasPressedThisFrame;
-
-                // gamepad support (A button = buttonSouth)
-                if (!pressedE && Gamepad.current != null)
-                    pressedE = Gamepad.current.buttonSouth.wasPressedThisFrame;
-
-                if (pressedE)
-                {
-                    door_closed.SetActive(false);
-                    door_opened.SetActive(true);
-                    intText.SetActive(false);
-
-                    if (open != null)
-                        open.Play();
-
-                    StartCoroutine(repeat());
-                    opened = true;
-                }
-            }
-            else
+            if (locked)
             {
                 lockedtext.SetActive(true);
+                return;
+            }
+
+            // Show interact text
+            intText.SetActive(true);
+
+            // Input check
+            if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+            {
+                OpenDoor();
             }
         }
     }
@@ -64,23 +53,35 @@ public class Door : MonoBehaviour
         }
     }
 
-    IEnumerator repeat()
+    public void UnlockDoor()
+    {
+        locked = false;
+    }
+
+    void OpenDoor()
+    {
+        opened = true;
+
+        door_closed.SetActive(false);
+        door_opened.SetActive(true);
+        intText.SetActive(false);
+
+        if (openSound != null)
+            openSound.Play();
+
+        StartCoroutine(CloseAfterDelay());
+    }
+
+    System.Collections.IEnumerator CloseAfterDelay()
     {
         yield return new WaitForSeconds(4f);
 
         opened = false;
+
         door_closed.SetActive(true);
         door_opened.SetActive(false);
 
-        if (close != null)
-            close.Play();
-    }
-
-    void Update()
-    {
-        if(keyfound == true)
-        {
-            locked = false;
-        }
+        if (closeSound != null)
+            closeSound.Play();
     }
 }
