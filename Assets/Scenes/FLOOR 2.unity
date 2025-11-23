@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.17
+  m_FogDensity: 0.186
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.20050548, g: 0.2129156, b: 0.23773581, a: 1}
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.28927734, g: 0.30032203, b: 0.3283019, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.252
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -157,11 +157,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -169,19 +169,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 58.42
+      value: 41.371998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.98
+      value: -2.5080004
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.32
+      value: 74.62718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -236,11 +236,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (8)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -248,19 +248,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.909
+      value: -51.957
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.895721
+      value: 0.40772152
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.60504
+      value: -11.297859
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &2533542
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &23861007
@@ -1127,11 +1127,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (1)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -1139,19 +1139,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 65.6
+      value: 48.552
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.351
+      value: -0.13700008
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -50.253525
+      value: 5.0536575
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1232,11 +1232,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (4)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -1248,15 +1248,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.606007
+      value: -8.441994
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.676478
+      value: -1.8115215
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.7978306
+      value: 57.10501
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &50525505
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &56682076
@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &59536048
 MonoBehaviour:
@@ -3030,11 +3030,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (4)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -3046,15 +3046,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.38
+      value: 9.331999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.24
+      value: -2.2480001
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.06
+      value: 68.36718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3292,7 +3292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &65888152
@@ -4113,7 +4113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &78495163
@@ -4526,7 +4526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &80855969
@@ -5291,11 +5291,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -5303,19 +5303,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.43
+      value: 50.382
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.33
+      value: -2.158
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.19
+      value: 66.497185
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5479,11 +5479,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (1)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -5491,19 +5491,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.1
+      value: -8.948
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.59
+      value: -2.8979998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.904062
+      value: 84.21124
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5599,7 +5599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.1
 --- !u!114 &104315164
 MonoBehaviour:
@@ -11719,7 +11719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &120778707
@@ -17615,8 +17615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 45
   flickerSpeed: 0.1
 --- !u!114 &150565173
 MonoBehaviour:
@@ -17959,7 +17959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 200
+  maxIntensity: 135
   flickerSpeed: 0.1
 --- !u!114 &154890974
 MonoBehaviour:
@@ -18541,11 +18541,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (10)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -18557,15 +18557,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.177
+      value: -7.8710003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.48
+      value: -0.008000374
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.841
+      value: 2.4661827
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19056,7 +19056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &177757222
@@ -19469,7 +19469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &191584891
@@ -19638,7 +19638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &193142142
@@ -20649,7 +20649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &208407116
@@ -21337,7 +21337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.1
 --- !u!114 &229178777
 MonoBehaviour:
@@ -21581,7 +21581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &231183453
@@ -22018,43 +22018,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.02827
+      value: -20.077187
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0804182
+      value: 0.0058622956
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.1718216
+      value: 7.2164593
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.71074826
+      value: 0.70957845
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.06524824
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7034465
+      value: 0.6987457
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.063210666
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -169.576
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 89.408
+      value: -90.87399
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 179.914
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22377,7 +22377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &248125670
@@ -22657,8 +22657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 40
   flickerSpeed: 0.3
 --- !u!114 &248900564
 MonoBehaviour:
@@ -24921,7 +24921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &294773169
@@ -25167,7 +25167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.1
 --- !u!114 &303852285
@@ -25310,7 +25310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &304593794
@@ -25479,7 +25479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &312627718
@@ -26541,7 +26541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &330961048
@@ -27580,6 +27580,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345172620}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &348614718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348614719}
+  m_Layer: 0
+  m_Name: Flickering Lights
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348614719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348614718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.048, y: 11.488, z: -55.307182}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1341062693}
+  - {fileID: 1006361676}
+  - {fileID: 2051904598}
+  - {fileID: 375236272}
+  - {fileID: 931623096}
+  - {fileID: 1441800611}
+  - {fileID: 1441240187}
+  - {fileID: 62341751}
+  - {fileID: 1490779420}
+  - {fileID: 610144396}
+  - {fileID: 2276277}
+  - {fileID: 1047309174}
+  - {fileID: 851040284}
+  - {fileID: 1779380003}
+  - {fileID: 893530953}
+  - {fileID: 1737178988}
+  - {fileID: 1694303382}
+  - {fileID: 1039618427}
+  - {fileID: 2022003658}
+  - {fileID: 27282100}
+  - {fileID: 836567505}
+  - {fileID: 2057822730}
+  - {fileID: 1563725084}
+  - {fileID: 1791705305}
+  - {fileID: 836718017}
+  - {fileID: 481779829}
+  - {fileID: 1468795011}
+  - {fileID: 472448232}
+  - {fileID: 1952134106}
+  - {fileID: 1780759190}
+  - {fileID: 757909609}
+  - {fileID: 160178928}
+  - {fileID: 1846418942}
+  - {fileID: 101198065}
+  - {fileID: 1966749642}
+  - {fileID: 765404382}
+  - {fileID: 97617273}
+  - {fileID: 414901917}
+  - {fileID: 2019694}
+  - {fileID: 2066512763}
+  - {fileID: 1297609387}
+  - {fileID: 24613435}
+  - {fileID: 1343800422}
+  - {fileID: 1690336873}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355565181
 GameObject:
   m_ObjectHideFlags: 0
@@ -28143,11 +28218,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (3)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -28159,15 +28234,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.949324
+      value: 7.9013233
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.937133
+      value: -1.5508671
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.2123156
+      value: 48.094868
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29678,7 +29753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &412098637
@@ -29781,11 +29856,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -29793,19 +29868,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.938
+      value: 28.89
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.33
+      value: -2.158
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.19
+      value: 66.497185
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29926,7 +30001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &423019010
@@ -32217,15 +32292,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (17)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7598002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
@@ -32233,15 +32308,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -79.27501
+      value: -96.32301
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.33
+      value: -2.158
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.862521
+      value: 66.1697
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32521,7 +32596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &476210057
@@ -32936,15 +33011,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (15)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7598002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
@@ -32952,15 +33027,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.830765
+      value: -104.87877
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.542263
+      value: -2.945737
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.74819
+      value: 89.055374
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -33055,7 +33130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &483395672
@@ -33894,7 +33969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &495834910
@@ -35578,7 +35653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &542061215
@@ -36150,8 +36225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 150
+  minIntensity: 0
+  maxIntensity: 130
   flickerSpeed: 0.3
 --- !u!114 &560587462
 MonoBehaviour:
@@ -36293,7 +36368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &566629211
@@ -42986,7 +43061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &604743446
@@ -43266,7 +43341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &608262256
@@ -43395,11 +43470,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (7)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -43407,19 +43482,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.04
+      value: -31.088001
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.895721
+      value: 0.40772152
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.60504
+      value: -11.297859
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44673,7 +44748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &651161471
@@ -45004,15 +45079,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.93827
+      value: -20.19
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0804182
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9218216
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 436420, guid: e6dfc6cc0cb127e43a220e29dbadbfd6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -45899,7 +45974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 20
   flickerSpeed: 0.1
 --- !u!114 &683320686
 MonoBehaviour:
@@ -46150,7 +46225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &691833259
@@ -47889,7 +47964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &722614794
@@ -48740,7 +48815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.1
 --- !u!114 &753258882
@@ -49124,11 +49199,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (9)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -49140,15 +49215,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.177
+      value: -7.8710003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.86
+      value: 0.37199974
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -66.631
+      value: -11.323814
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -49474,7 +49549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &761746497
@@ -49817,11 +49892,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (3)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -49833,15 +49908,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.38
+      value: 9.331999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.22
+      value: -3.2679996
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.55
+      value: 95.85718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50782,7 +50857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &792769919
@@ -52094,11 +52169,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (5)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -52110,15 +52185,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.606007
+      value: -8.441994
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.63
+      value: -0.8579998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.98
+      value: 22.327183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -52173,11 +52248,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (8)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -52189,15 +52264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.28
+      value: -34.328003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.25
+      value: -1.2379999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.19
+      value: 36.11718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53069,11 +53144,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (9)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -53081,19 +53156,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.81
+      value: -67.858
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.9
+      value: -0.5880003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.52
+      value: 11.787182
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58827,7 +58902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &873822071
@@ -59129,7 +59204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &880575689
@@ -59272,7 +59347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &890028913
@@ -59486,11 +59561,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (11)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -59498,19 +59573,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -82.89
+      value: -99.938
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.197038
+      value: -1.2909622
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.67
+      value: 37.637184
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -59658,31 +59733,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7597997
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 64.44878
+      value: 47.400776
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.15
+      value: -1.3380003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.359321
+      value: 39.94786
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -59985,8 +60060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 40
   flickerSpeed: 0.1
 --- !u!114 &927150550
 MonoBehaviour:
@@ -60088,31 +60163,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (15)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7597997
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.97
+      value: 0.921999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.589265
+      value: -0.89873505
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.286692
+      value: 28.02049
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61511,7 +61586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &992011342
@@ -61654,7 +61729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &995501676
@@ -62131,7 +62206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &998071208
@@ -62234,31 +62309,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (2)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7597997
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.94
+      value: 37.892
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.15
+      value: -1.3380003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.98
+      value: 32.327183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63567,7 +63642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1036789181
@@ -63807,11 +63882,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (14)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -63823,15 +63898,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.38658
+      value: -104.434586
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.86
+      value: -1.6280003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.943695
+      value: 49.363487
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63969,11 +64044,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (10)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -63981,19 +64056,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.909
+      value: -51.957
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.54
+      value: -0.94799995
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.07
+      value: 30.237183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -64200,7 +64275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 20
   flickerSpeed: 0.3
 --- !u!114 &1050113331
 MonoBehaviour:
@@ -64342,7 +64417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1050785266
@@ -64715,7 +64790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1069812130
@@ -65299,7 +65374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1079585343
@@ -66258,7 +66333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1097050182
@@ -66440,7 +66515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &1100456005
 MonoBehaviour:
@@ -67376,7 +67451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1121138346
@@ -67519,7 +67594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1123121391
@@ -68166,7 +68241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &1136043242
@@ -68823,7 +68898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1144564505
@@ -69912,8 +69987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 45
   flickerSpeed: 0.3
 --- !u!114 &1164435446
 MonoBehaviour:
@@ -72592,7 +72667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1260405292
@@ -73210,8 +73285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 40
   flickerSpeed: 0.3
 --- !u!114 &1280647743
 MonoBehaviour:
@@ -73962,7 +74037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1295425128
@@ -74065,11 +74140,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -74077,19 +74152,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.68
+      value: 28.632
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.67
+      value: -2.8179998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.1
+      value: 83.40718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -80869,15 +80944,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (16)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7598002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
@@ -80885,15 +80960,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.96
+      value: 28.911999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.724
+      value: -0.76399994
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.953
+      value: 25.354183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -81493,7 +81568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1359701747
@@ -82419,7 +82494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1383292400
@@ -82722,7 +82797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1384767213
@@ -94280,7 +94355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1428164821
@@ -94423,7 +94498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1428699606
@@ -94743,11 +94818,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (19)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -94755,19 +94830,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.98993
+      value: 18.941929
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.56
+      value: 0.0720005
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -56.07
+      value: -0.7628174
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -94822,11 +94897,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (18)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -94834,19 +94909,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.98993
+      value: 18.941929
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.507233
+      value: -0.98076725
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.68833
+      value: 29.618853
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -96509,15 +96584,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (16)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.7598
+      value: 2.7598002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
@@ -96525,15 +96600,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -70.94268
+      value: -87.99068
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.5878
+      value: -2.9002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.11474
+      value: 88.42192
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -96739,8 +96814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 150
+  minIntensity: 0
+  maxIntensity: 130
   flickerSpeed: 0.1
 --- !u!114 &1472140059
 MonoBehaviour:
@@ -97547,7 +97622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1479846161
@@ -97690,7 +97765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1481647940
@@ -97833,7 +97908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1483584950
@@ -98310,11 +98385,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (5)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -98326,15 +98401,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.63
+      value: -28.678001
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.499641
+      value: -1.9883585
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7909284
+      value: 59.09811
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -98917,7 +98992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 20
   flickerSpeed: 0.3
 --- !u!114 &1505981281
 MonoBehaviour:
@@ -111789,7 +111864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1555808854
@@ -111933,7 +112008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 200
+  maxIntensity: 135
   flickerSpeed: 0.3
 --- !u!114 &1555869115
 MonoBehaviour:
@@ -112305,11 +112380,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (13)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -112321,15 +112396,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.28
+      value: -97.328
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.25
+      value: -1.2379999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.39
+      value: 20.917183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -114218,7 +114293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1604253753
@@ -115882,7 +115957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1649745264
@@ -116060,7 +116135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1653849466
@@ -116401,7 +116476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1656459600
@@ -117749,11 +117824,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (17)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -117761,19 +117836,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.048
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.488
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.307182
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -117965,11 +118040,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (13)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -117977,19 +118052,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -72.77352
+      value: -89.82152
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.841551
+      value: -1.6464491
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.4959583
+      value: 48.811226
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -118491,7 +118566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &1720178735
@@ -118797,7 +118872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1733033092
@@ -118990,11 +119065,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (12)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -119006,15 +119081,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.80696
+      value: -72.854965
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.6
+      value: -1.8879995
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.800996
+      value: 53.506187
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -120442,12 +120517,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779379999}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.15643422, y: -0.98647434, z: 0.048381783, w: -0.007475888}
-  m_LocalPosition: {x: -35.93, y: 5.8228984, z: -20.513}
-  m_LocalScale: {x: 0.6850301, y: 1.3788058, z: 0.5008491}
+  m_LocalRotation: {x: -0.15643424, y: -0.9864744, z: 0.048381787, w: -0.0074758884}
+  m_LocalPosition: {x: -52.978, y: -5.6651015, z: 34.79418}
+  m_LocalScale: {x: 0.6850299, y: 1.3788056, z: 0.50084895}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 348614719}
   m_LocalEulerAnglesHint: {x: 5.612, y: 180.022, z: 18.023}
 --- !u!1001 &1780759189
 PrefabInstance:
@@ -120455,11 +120530,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (6)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -120471,15 +120546,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.606007
+      value: -8.441994
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.25
+      value: -1.2379999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.19
+      value: 36.11718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -120574,7 +120649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &1781503075
@@ -121084,11 +121159,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (12)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -121100,15 +121175,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -80.28
+      value: -97.328
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.63
+      value: -0.8579998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -57.91
+      value: -2.6028175
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -121362,7 +121437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
+  minIntensity: 0
   maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &1797051261
@@ -122673,11 +122748,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (11)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -122685,19 +122760,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.03
+      value: -31.078
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.457
+      value: -0.031000137
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.802917
+      value: 2.5042648
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -124166,8 +124241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 150
+  minIntensity: 0
+  maxIntensity: 130
   flickerSpeed: 0.3
 --- !u!114 &1869592793
 MonoBehaviour:
@@ -124309,9 +124384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
-  flickerSpeed: 0.3
+  flickerSpeed: 0.1
 --- !u!114 &1871624186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124686,7 +124761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1879025258
@@ -125629,7 +125704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 200
+  maxIntensity: 135
   flickerSpeed: 0.3
 --- !u!114 &1891956517
 MonoBehaviour:
@@ -125884,7 +125959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &1903017494
@@ -127138,7 +127213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &1935925876
 MonoBehaviour:
@@ -127722,11 +127797,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (14)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -127738,15 +127813,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.901
+      value: -72.949005
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.492
+      value: -2.9960003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.97426
+      value: 85.28144
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -128787,11 +128862,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (2)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -128799,19 +128874,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3695999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.94
+      value: -25.987999
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.59
+      value: -2.8979998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.904062
+      value: 84.21124
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -134829,8 +134904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 1
-  maxIntensity: 85
+  minIntensity: 0
+  maxIntensity: 45
   flickerSpeed: 0.3
 --- !u!114 &1997871746
 MonoBehaviour:
@@ -134972,9 +135047,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
-  flickerSpeed: 0.3
+  flickerSpeed: 0.1
 --- !u!114 &2002904525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136180,7 +136255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &2021582574
@@ -136283,11 +136358,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: FFK_Lamp_Ceiling_01_01 (6)
+      value: Fix Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -136299,15 +136374,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1286736
+      value: -19.176674
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.101
+      value: -0.38700008
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.96
+      value: 11.347183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -136673,7 +136748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &2029115786
@@ -137943,11 +138018,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -137959,15 +138034,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.949324
+      value: 7.9013233
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.917133
+      value: -2.5708666
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.277683
+      value: 75.58487
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -138100,11 +138175,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights (7)
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -138116,15 +138191,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.28
+      value: -34.328003
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.63
+      value: -0.8579998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.98
+      value: 22.327183
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -138289,11 +138364,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 348614719}
     m_Modifications:
     - target: {fileID: 1124843209013569571, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_Name
-      value: DeadLights
+      value: Dead Lights
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.x
@@ -138301,19 +138376,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3696
+      value: 1.3696002
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 67.43
+      value: 50.382
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.67
+      value: -2.8179998
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.1
+      value: 83.40718
       objectReference: {fileID: 0}
     - target: {fileID: 6136210199978121741, guid: 9a27eb6bfb1a9db44a84bd8b765e30af, type: 3}
       propertyPath: m_LocalRotation.w
@@ -138443,7 +138518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &2069611852
@@ -139409,7 +139484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
   minIntensity: 1
-  maxIntensity: 150
+  maxIntensity: 85
   flickerSpeed: 0.3
 --- !u!114 &2086522883
 MonoBehaviour:
@@ -139551,7 +139626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &2087160650
@@ -139694,7 +139769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.3
 --- !u!114 &2089030732
@@ -139946,7 +140021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53293ca785f24343a13ed0dd19515be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LightFlicker
-  minIntensity: 0.5
+  minIntensity: 0
   maxIntensity: 1
   flickerSpeed: 0.1
 --- !u!114 &2104344547
@@ -141511,47 +141586,4 @@ SceneRoots:
   - {fileID: 1713997335}
   - {fileID: 1479793900}
   - {fileID: 2120475618}
-  - {fileID: 895221037}
-  - {fileID: 1006361675}
-  - {fileID: 2051904597}
-  - {fileID: 375236271}
-  - {fileID: 931623095}
-  - {fileID: 1441800610}
-  - {fileID: 1441240186}
-  - {fileID: 62341750}
-  - {fileID: 1490779419}
-  - {fileID: 610144395}
-  - {fileID: 2276276}
-  - {fileID: 1047309173}
-  - {fileID: 851040283}
-  - {fileID: 1779380003}
-  - {fileID: 893530952}
-  - {fileID: 1737178987}
-  - {fileID: 1694303381}
-  - {fileID: 1039618426}
-  - {fileID: 2022003657}
-  - {fileID: 27282099}
-  - {fileID: 836567504}
-  - {fileID: 2057822729}
-  - {fileID: 1563725083}
-  - {fileID: 1791705304}
-  - {fileID: 836718016}
-  - {fileID: 481779828}
-  - {fileID: 1468795010}
-  - {fileID: 472448231}
-  - {fileID: 1952134105}
-  - {fileID: 1780759189}
-  - {fileID: 757909608}
-  - {fileID: 160178927}
-  - {fileID: 1846418941}
-  - {fileID: 101198064}
-  - {fileID: 1966749641}
-  - {fileID: 765404381}
-  - {fileID: 97617272}
-  - {fileID: 414901916}
-  - {fileID: 2019693}
-  - {fileID: 2066512762}
-  - {fileID: 1297609386}
-  - {fileID: 24613434}
-  - {fileID: 1343800421}
-  - {fileID: 1690336872}
+  - {fileID: 348614719}
