@@ -2041,7 +2041,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -3993,9 +3994,8 @@ MonoBehaviour:
   door_opened: {fileID: 2120413968}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &381963383
 Rigidbody:
@@ -6495,8 +6495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd4de543fe063c4c8a553a360b7b3e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::keyScript
-  inticon: {fileID: 848313880}
-  key: {fileID: 693647758}
+  intIcon: {fileID: 0}
+  doorToUnlock: {fileID: 0}
 --- !u!54 &693647760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6959,9 +6959,8 @@ MonoBehaviour:
   door_opened: {fileID: 51470157}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &741563096
 Rigidbody:
@@ -10411,9 +10410,8 @@ MonoBehaviour:
   door_opened: {fileID: 163750208}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1215790682
 Rigidbody:
@@ -10802,9 +10800,8 @@ MonoBehaviour:
   door_opened: {fileID: 393785927}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1286107686
 Rigidbody:
@@ -11552,9 +11549,8 @@ MonoBehaviour:
   door_opened: {fileID: 204957838}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1381149174
 Rigidbody:
@@ -11644,7 +11640,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -11971,9 +11968,8 @@ MonoBehaviour:
   door_opened: {fileID: 2062748037}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 1775697141}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 1
 --- !u!54 &1393988003
 Rigidbody:
@@ -12801,9 +12797,8 @@ MonoBehaviour:
   door_opened: {fileID: 723281664}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1464992422
 Rigidbody:
@@ -13870,9 +13865,8 @@ MonoBehaviour:
   door_opened: {fileID: 1129002383}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1518355050
 Rigidbody:
@@ -14595,9 +14589,8 @@ MonoBehaviour:
   door_opened: {fileID: 1172518172}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1552296683
 Rigidbody:
@@ -17052,9 +17045,8 @@ MonoBehaviour:
   door_opened: {fileID: 1072742930}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1776170991
 Rigidbody:
@@ -18063,9 +18055,8 @@ MonoBehaviour:
   door_opened: {fileID: 965371095}
   intText: {fileID: 848313880}
   lockedtext: {fileID: 0}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
   locked: 0
 --- !u!54 &1863998801
 Rigidbody:
