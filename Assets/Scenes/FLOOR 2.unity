@@ -28872,7 +28872,7 @@ GameObject:
   - component: {fileID: 381963383}
   - component: {fileID: 381963384}
   m_Layer: 0
-  m_Name: Door (Comlab 1)
+  m_Name: Door (Classroom 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46486,7 +46486,7 @@ GameObject:
   - component: {fileID: 687473821}
   - component: {fileID: 687473820}
   m_Layer: 0
-  m_Name: key (to Comlab 1)
+  m_Name: key (to Classroom 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53241,7 +53241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::keyScript
   intIcon: {fileID: 848313880}
-  doorToUnlock: {fileID: 381963384}
+  doorToUnlock: {fileID: 1863998802}
 --- !u!4 &846142898
 Transform:
   m_ObjectHideFlags: 0
@@ -125150,7 +125150,7 @@ GameObject:
   - component: {fileID: 1863998801}
   - component: {fileID: 1863998802}
   m_Layer: 0
-  m_Name: Room 601
+  m_Name: Admin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125209,15 +125209,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863998798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 061fe86159561dd4fb7aec0c744d02ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d21bcb28bbbce14ba30d942d4289049, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Door_Keyless
+  m_EditorClassIdentifier: Assembly-CSharp::Door
   door_closed: {fileID: 89927150}
   door_opened: {fileID: 965371095}
   intText: {fileID: 848313880}
-  open: {fileID: 0}
-  close: {fileID: 0}
-  opened: 0
+  lockedtext: {fileID: 1775697141}
+  openSound: {fileID: 0}
+  closeSound: {fileID: 0}
+  locked: 1
 --- !u!1001 &1864261113
 PrefabInstance:
   m_ObjectHideFlags: 0
