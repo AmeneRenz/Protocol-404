@@ -842,6 +842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mainmenu
   sceneName: FLOOR 2
   fader: {fileID: 1232573746}
+  bgmSource: {fileID: 0}
+  bgmClip: {fileID: 8300000, guid: e45e011e720a6094f84c508ea21d815d, type: 3}
+  bgmVolume: 0.7
 --- !u!1 &798208771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc7476de47835a4b8ba3b7d3065ca65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: e45e011e720a6094f84c508ea21d815d, type: 3}
   musicVolume: 0.6
 --- !u!4 &1443918021
 Transform:

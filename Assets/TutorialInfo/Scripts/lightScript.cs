@@ -19,6 +19,7 @@ public class lightScript : MonoBehaviour
 
             if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
             {
+                GetComponent<PickupSound>().PlayPickupSound();
                 flashlight_ground.SetActive(false);
                 flashlight_player.SetActive(true);
                 inticon.SetActive(false);

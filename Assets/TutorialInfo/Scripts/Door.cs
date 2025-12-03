@@ -14,8 +14,7 @@ public class Door : MonoBehaviour
     public GameObject lockedtext;
 
     [Header("Audio")]
-    public AudioSource openSound;
-    public AudioSource closeSound;
+    public DoorSound doorSound;
 
     [Header("Settings")]
     public bool locked = true;     // Door starts locked
@@ -30,6 +29,12 @@ public class Door : MonoBehaviour
             if (locked)
             {
                 lockedtext.SetActive(true);
+                // If player presses E on locked door → play locked sound
+                if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                {
+                    if (doorSound != null)
+                        doorSound.PlayLocked();
+                }
                 return;
             }
 
@@ -66,8 +71,8 @@ public class Door : MonoBehaviour
         door_opened.SetActive(true);
         intText.SetActive(false);
 
-        if (openSound != null)
-            openSound.Play();
+        if (doorSound != null)
+        doorSound.PlayOpen();
 
         StartCoroutine(CloseAfterDelay());
     }
@@ -81,7 +86,7 @@ public class Door : MonoBehaviour
         door_closed.SetActive(true);
         door_opened.SetActive(false);
 
-        if (closeSound != null)
-            closeSound.Play();
+        if (doorSound != null)
+        doorSound.PlayClose();
     }
 }

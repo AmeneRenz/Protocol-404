@@ -10,6 +10,23 @@ public class Mainmenu : MonoBehaviour
     [Header("Scene Loader")]
     public UIFader fader; // assign in inspector (UIFader component)
 
+    [Header("Background Music")]
+    public AudioSource bgmSource;   // Drag an AudioSource here
+    public AudioClip bgmClip;       // Drag your BGM audio file here
+    public float bgmVolume = 0.7f;  // Volume control
+
+    void Start()
+    {
+        // Play BGM when menu loads
+        if (bgmSource != null && bgmClip != null)
+        {
+            bgmSource.clip = bgmClip;
+            bgmSource.volume = bgmVolume;
+            bgmSource.loop = true;
+            bgmSource.Play();
+        }
+    }
+
     void Update()
     {
         // Keyboard shortcuts
@@ -27,7 +44,7 @@ public class Mainmenu : MonoBehaviour
     public void OnPlayPressed()
     {
         if (fader != null)
-            fader.LoadScene(sceneName); // now calls LoadScene instead of FadeAndLoad
+            fader.LoadScene(sceneName);
         else
             SceneManager.LoadScene(sceneName);
     }
