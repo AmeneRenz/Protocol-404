@@ -1,39 +1,40 @@
-using UnityEngine;
-using UnityEngine.InputSystem;
+    using System.Collections;
+    using UnityEngine;
+    using UnityEngine.InputSystem;
 
-public class lightScript : MonoBehaviour
-{
-    public GameObject flashlight_ground;
-    public GameObject inticon;
-    public GameObject flashlight_player;
-
-    private bool pickedUp = false;
-
-    void OnTriggerStay(Collider other)
+    public class lightScript : MonoBehaviour
     {
-        if (pickedUp) return;
+        public GameObject flashlight_ground;
+        public GameObject inticon;
+        public GameObject flashlight_player;
 
-        if (other.CompareTag("MainCamera"))
+        private bool pickedUp = false;
+
+        void OnTriggerStay(Collider other)
         {
-            inticon.SetActive(true);
+            if (pickedUp) return;
 
-            if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+            if (other.CompareTag("MainCamera"))
             {
-                GetComponent<PickupSound>().PlayPickupSound();
-                flashlight_ground.SetActive(false);
-                flashlight_player.SetActive(true);
+                inticon.SetActive(true);
+
+                if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+                {
+                    GetComponent<Pickup_sound>().PlayPickupSound();
+                    flashlight_ground.SetActive(false);
+                    flashlight_player.SetActive(true);
+                    inticon.SetActive(false);
+                    pickedUp = true;
+                    this.enabled = false;
+                }
+            }
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("MainCamera") && !pickedUp)
+            {
                 inticon.SetActive(false);
-                pickedUp = true;
-                this.enabled = false;
             }
         }
     }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("MainCamera") && !pickedUp)
-        {
-            inticon.SetActive(false);
-        }
-    }
-}

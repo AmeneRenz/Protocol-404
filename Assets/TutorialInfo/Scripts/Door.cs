@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,13 +10,17 @@ public class Door : MonoBehaviour
 
     [Header("UI Prompts")]
     public GameObject intText;
-    public GameObject lockedtext;
+    public GameObject lockedText;
 
     [Header("Audio")]
-    public DoorSound doorSound;
+    public AudioSource openSound;
+    public AudioSource closeSound;
+    public AudioSource lockedSound; // Locked door sound
 
     [Header("Settings")]
-    public bool locked = true;     // Door starts locked
+    public bool locked = true;
+    public float autoCloseDelay = 4f;
+
     private bool opened = false;
 
     void OnTriggerStay(Collider other)
@@ -28,65 +31,55 @@ public class Door : MonoBehaviour
         {
             if (locked)
             {
-                lockedtext.SetActive(true);
-                // If player presses E on locked door → play locked sound
-                if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
-                {
-                    if (doorSound != null)
-                        doorSound.PlayLocked();
-                }
+                if (lockedText != null) lockedText.SetActive(true);
+                if (intText != null) intText.SetActive(false);
+
+                // Play locked sound when player presses E on locked door
+                if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame && lockedSound != null)
+                    lockedSound.Play();
+
                 return;
             }
 
-            // Show interact text
-            intText.SetActive(true);
+            if (intText != null) intText.SetActive(true);
 
-            // Input check
             if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
-            {
                 OpenDoor();
-            }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
-        {
-            intText.SetActive(false);
-            lockedtext.SetActive(false);
-        }
+        if (!other.CompareTag("MainCamera")) return;
+
+        if (intText != null) intText.SetActive(false);
+        if (lockedText != null) lockedText.SetActive(false);
     }
 
-    public void UnlockDoor()
-    {
-        locked = false;
-    }
+    public void UnlockDoor() => locked = false;
 
     void OpenDoor()
     {
         opened = true;
 
-        door_closed.SetActive(false);
-        door_opened.SetActive(true);
-        intText.SetActive(false);
+        if (door_closed != null) door_closed.SetActive(false);
+        if (door_opened != null) door_opened.SetActive(true);
+        if (intText != null) intText.SetActive(false);
 
-        if (doorSound != null)
-        doorSound.PlayOpen();
+        if (openSound != null) openSound.Play();
 
         StartCoroutine(CloseAfterDelay());
     }
 
-    System.Collections.IEnumerator CloseAfterDelay()
+    IEnumerator CloseAfterDelay()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(autoCloseDelay);
 
         opened = false;
 
-        door_closed.SetActive(true);
-        door_opened.SetActive(false);
+        if (door_closed != null) door_closed.SetActive(true);
+        if (door_opened != null) door_opened.SetActive(false);
 
-        if (doorSound != null)
-        doorSound.PlayClose();
+        if (closeSound != null) closeSound.Play();
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PickupSound : MonoBehaviour
+public class Pickup_sound : MonoBehaviour
 {
     public AudioClip pickupClip;
     public float volume = 1f;

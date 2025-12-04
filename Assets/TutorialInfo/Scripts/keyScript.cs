@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,7 +9,7 @@ public class KeyScript : MonoBehaviour
 
     [Header("Assign the door this key unlocks")]
     public Door doorToUnlock;
-
+    
     void OnTriggerStay(Collider other)
     {
         if (!other.CompareTag("MainCamera")) return;
@@ -17,6 +18,7 @@ public class KeyScript : MonoBehaviour
 
         if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
         {
+            GetComponent<Pickup_sound>().PlayPickupSound();           
             doorToUnlock.UnlockDoor();   // Unlock the assigned door
             gameObject.SetActive(false); // Hide/delete key
             intIcon.SetActive(false);

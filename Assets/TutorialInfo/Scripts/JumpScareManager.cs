@@ -29,9 +29,11 @@ public class JumpScareManager : MonoBehaviour
         // Save the player's current position
         Vector3 savedPos = player.transform.position;
 
+        // Load jumpscare scene additively
         var loadOp = SceneManager.LoadSceneAsync(jumpScareSceneName, LoadSceneMode.Additive);
         yield return loadOp;
 
+        // Set jumpscare scene active
         Scene jumpScene = SceneManager.GetSceneByName(jumpScareSceneName);
         SceneManager.SetActiveScene(jumpScene);
 

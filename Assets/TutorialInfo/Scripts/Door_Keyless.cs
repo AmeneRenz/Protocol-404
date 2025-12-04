@@ -6,7 +6,10 @@ using UnityEngine.InputSystem; // <- new input system
 public class Door_Keyless : MonoBehaviour
 {
     public GameObject door_closed, door_opened, intText;
-    public AudioSource open, close;
+
+    [Header("Audio")]
+    public DoorSound doorSound;
+
     public bool opened;
 
     void OnTriggerStay(Collider other)

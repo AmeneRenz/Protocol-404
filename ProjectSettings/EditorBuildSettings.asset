@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Jump Scare.unity
     guid: ff3846c6830198c40b6a6fdfbb994174
   - enabled: 1
+    path: Assets/Scenes/Jump Scare(Lose).unity
+    guid: 3f78e515580c5f8458deee385303a5bb
+  - enabled: 1
     path: Assets/Scenes/GameoverUI.unity
     guid: 27b5b643b30b4884b8a980672935baac
+  - enabled: 1
+    path: Assets/Scenes/WinUI.unity
+    guid: db64f00908c66e943a44683c48fce546
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
