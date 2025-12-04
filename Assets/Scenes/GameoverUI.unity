@@ -768,8 +768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86391a64d5509bc41b4de006044342d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mainmenu
-  sceneName: FLOOR 2
-  fader: {fileID: 0}
 --- !u!114 &627604855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,6 +782,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mainmenu
   sceneName: FLOOR 2
   fader: {fileID: 1232573746}
+  bgmSource: {fileID: 0}
+  bgmClip: {fileID: 0}
+  bgmVolume: 0.7
 --- !u!114 &627604856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc7476de47835a4b8ba3b7d3065ca65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  backgroundMusic: {fileID: 0}
+  backgroundMusic: {fileID: 8300000, guid: 294e88f61ed9bc24b80aa634bf231216, type: 3}
   musicVolume: 0.6
 --- !u!4 &1443918021
 Transform:

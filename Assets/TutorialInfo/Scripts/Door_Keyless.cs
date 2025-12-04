@@ -1,66 +1,78 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem; // <- new input system
+using UnityEngine.InputSystem;
 
 public class Door_Keyless : MonoBehaviour
 {
-    public GameObject door_closed, door_opened, intText;
+    [Header("Door Objects")]
+    public GameObject door_closed;
+    public GameObject door_opened;
+
+    [Header("UI Prompt")]
+    public GameObject intText;
 
     [Header("Audio")]
-    public DoorSound doorSound;
+    public AudioSource openSound;
+    public AudioSource closeSound;
 
-    public bool opened;
+    private bool opened = false;
 
     void OnTriggerStay(Collider other)
     {
         if (!other.CompareTag("MainCamera")) return;
 
-        if (opened == false)
+        if (!opened)
         {
-            intText.SetActive(true);
+            if (intText != null)
+                intText.SetActive(true);
 
-            // Use the new Input System. Use wasPressedThisFrame to emulate GetKeyDown
             bool pressedE = false;
-            if (Keyboard.current != null && Keyboard.current.eKey != null)
-            {
-                pressedE = Keyboard.current.eKey.wasPressedThisFrame;
-            }
 
-            // Optional: allow gamepad confirm button (A / buttonSouth)
+            // Keyboard
+            if (Keyboard.current != null && Keyboard.current.eKey != null)
+                pressedE = Keyboard.current.eKey.wasPressedThisFrame;
+
+            // Gamepad "A"
             if (!pressedE && Gamepad.current != null)
-            {
                 pressedE = Gamepad.current.buttonSouth.wasPressedThisFrame;
-            }
 
             if (pressedE)
             {
-                door_closed.SetActive(false);
-                door_opened.SetActive(true);
-                intText.SetActive(false);
-                // if you have an AudioSource assigned, uncomment to play:
-                // open.Play();
-                StartCoroutine(repeat());
-                opened = true;
+                OpenDoor();
             }
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
-        {
+        if (other.CompareTag("MainCamera") && intText != null)
             intText.SetActive(false);
-        }
     }
 
-    IEnumerator repeat()
+    void OpenDoor()
     {
-        yield return new WaitForSeconds(4.0f);
+        opened = true;
+
+        if (door_closed != null) door_closed.SetActive(false);
+        if (door_opened != null) door_opened.SetActive(true);
+        if (intText != null) intText.SetActive(false);
+
+        // Play open sound if assigned
+        if (openSound != null) openSound.Play();
+
+        StartCoroutine(CloseDoor());
+    }
+
+    IEnumerator CloseDoor()
+    {
+        yield return new WaitForSeconds(4f);
+
         opened = false;
-        door_closed.SetActive(true);
-        door_opened.SetActive(false);
-        // if you have an AudioSource assigned, uncomment to play:
-        // close.Play();
+
+        if (door_closed != null) door_closed.SetActive(true);
+        if (door_opened != null) door_opened.SetActive(false);
+
+        // Play close sound if assigned
+        if (closeSound != null) closeSound.Play();
     }
 }
